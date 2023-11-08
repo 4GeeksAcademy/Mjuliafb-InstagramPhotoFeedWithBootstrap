@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram photo feed with bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/072e5df971.js" cros-sorigin="anonymous"></script> 
 </head>
 <body>
     <div class="container-fluid">
@@ -17,7 +18,35 @@
                 </div>
             </div>
             <div class="col-1 p-2">
-                    <button type="button" class="btn btn-success">Create new post</button>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Create new post
+                      </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Caption: </label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                                </div>
+                                <!-- Iconos abajo modal -->
+                                <div>
+                                 <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-camera fa-solid"></i></button>
+                                 <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-location-dot fa-solid "></i></button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
             </div>
             <div class="col-1 p-2 position-absolute top-0 end-0">      
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img class="buttonIcon" src="./assets/icono_config.png">
@@ -32,17 +61,19 @@
             </div>
         </div>
     </div>    
-    <div class="container"> 
+    <div class="container-fluid"> 
         <div class="row">
-            <div class="mx-auto p-2" style="width: 200px;">
-                <img class="gridIcon" src="./assets/iconono_cuadrados_grid_gris.png"/>
-                <img class="gridIconNotShow" src="./assets/iconono_cuadrados_grid_azul.png"/>
+            <div class="col-5 p-2"></div>
+            <div class="col-1 p-2 position-relative m-3">
+                <button type="button" class="btn btn-light position-absolute top-0 end-0"><i class="fa-grip fa-solid"></i></button>
             </div>
-            <div class="mx-auto p-2" style="width: 200px;">
-                <img class="gridIcon" src="./assets/icono_cuadrado_gris.png"/>
-                <img class="gridIconNotShow" src="./assets/iconono_cuadrados_grid_azul.png"/>
+            <div class="col-1 p-2 position-relative m-3">
+                <button type="button" class="btn btn-light position-absolute top-0 start-0"><i class="fa-square fa-solid"></i></button>
             </div>
-        </div>  
+            <div class="col-5 p-2"></div>
+        </div>
+    </div>
+    <div class="container">       
         <div class="row">
             <div class="col-12 m-3">
                 <div class="postBox">
@@ -54,22 +85,24 @@
                         <img class="postImage" src="https://img.freepik.com/foto-gratis/retrato-dos-cachorros-lindos-divertidos-perro-husky-siberiano-pelaje-blanco-gris-ojos-azules-perros-pequenos-sentados-suelo-posando-aspecto-interesante-aislar-blanco_7502-5586.jpg?w=1380&t=st=1699452215~exp=1699452815~hmac=7a48bce5eba653e3476274452e40127e75fe5d90e2d4371f92c224a44d1953ef"/>
                     </div>
                     <div class="postText">
-                        <p><b>10 likes</b><br><br>Si buscas un perro tranquilo al que le guste el sofá y que no requiera demasiada actividad, el husky siberiano no es para ti. 🐶🛷#HuskySiberiano</p>
+                        <p><b>10 likes</b></p>
+                        <p>Si buscas un perro tranquilo al que le guste el sofá y que no requiera demasiada actividad, el husky siberiano no es para ti. 🐶🛷#HuskySiberiano</p>
                     </div>
                 </div>
             </div>
         <div class="row">
             <div class="col-12 m-3">
                     <div class="postBox">
-                        <div class="postHeader">
+                        <div class="postHeader p-1">
                             <p>Comida favorita</p>
                             <p>08/11</p>
                         </div>
                         <div>
                             <img class="postImage" src="https://www.asadorcitywokalfafar.com/wp-content/uploads/2020/07/city-wok-alfafar-115-arroz-con-gambas-.jpg"/>
                         </div>
-                        <div class="postText">
-                            <p><b>10 likes</b><br><br>La comida china siempre es una aventura culinaria llena de sabores intensos. Cada bocado es un viaje a través de la tradición y la creatividad culinaria de China. ¿Cuál es tu plato chino favorito? 🥡🥢 #ComidaChina</p>
+                        <div class="postText p-1">
+                            <p><b>10 likes</b></p>
+                            <p>La comida china siempre es una aventura culinaria llena de sabores intensos. Cada bocado es un viaje a través de la tradición y la creatividad culinaria de China. ¿Cuál es tu plato chino favorito? 🥡🥢 #ComidaChina</p>
                         </div>
                     </div>       
                 </div>
@@ -77,63 +110,68 @@
         <div class="row">
             <div class="col-12 m-3">
                 <div class="postBox">
-                    <div class="postHeader">
+                    <div class="postHeader p-1">
                         <p>Planta favorita</p>
                         <p>08/11</p>
                     </div>
                     <div>
                         <img class="postImage" src="https://img.freepik.com/foto-gratis/arreglo-bella-flor-blanca_23-2148447227.jpg?w=826&t=st=1699450431~exp=1699451031~hmac=62047afac54a79f19b63a50bab966c38223de0604c998703f0d4e7c9712273d9"/>
                     </div>
-                    <div class="postText">
-                        <p><b>10 likes</b><br><br>"Rosales,pequeñas joyas indestructibles en tu jardín. 🌹💚 #MiniRosal </p>
+                    <div class="postText p-1">
+                        <p><b>10 likes</b></p> 
+                        <p>"Rosales,pequeñas joyas indestructibles en tu jardín. 🌹💚 #MiniRosal </p>
                     </div>
                 </div>       
             </div>
             <div class="row">
                 <div class="col-12 m-3">
                     <div class="postBox">
-                        <div class="postHeader">
+                        <div class="postHeader p-1">
                             <p>Equipo favorito</p>
                             <p>08/11</p>
                         </div>
                         <div>
                             <img class="postImage" src="https://imagenes.elpais.com/resizer/NUjWn8OdK0YmA9mv3KbeW0SYG5k=/1200x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/MSV7YD52FJDRRM23T2UBV4LTEI.JPG"/>
                         </div>
-                        <div class="postText">
-                            <p><b>10 likes</b><br><br>El Real Madrid, un equipo legendario con un legado de gloria. ⚽👑 #RealMadrid </p>
+                        <div class="postText p-1">
+                            <p><b>10 likes</b></p>
+                            <p>El Real Madrid, un equipo legendario con un legado de gloria. ⚽👑 #RealMadrid </p>
                         </div>
                     </div>
             <div class="row">
                 <div class="col-12 m-3">
                             <div class="postBox">
-                                <div class="postHeader">
+                                <div class="postHeader p-1">
                                     <p>Libro favorito</p>
                                     <p>08/11</p>
                                 </div>
                                 <div>
                                     <img class="postImage" src="https://fundacionlabalandra.org.ar/wp-content/uploads/2022/12/Imagen-Nota-Charla-en-Vivo-con-Andres-Neuman-300x300.jpg"/>
                                 </div>
-                                <div class="postText">
-                                    <p><b>10 likes</b><br><br> A Wandernburgo, una ciudad “móvil” entre Sajonia y Prusia (geográficamente indeterminada), ha llegado un viajero sin aparentes raíces, un hombre extraño tocado con un birrete que ha hecho del viaje por el viaje su razón de ser, alguien para quien el mundo y la vida no son sino una sucesión de estampas callejeras que en nada le comprometen. Wandernburgo no es un destino final sino una etapa más. Y sin embargo… hay algo en la ciudad y en sus habitantes que le atrae irremediablemente. Con el paso de los días, este hombre sin aparentes ataduras acaba preso de una serie de fuerzas ignotas que le impiden abandonar el lugar; donde antes había un viajero ahora hay un ciudadano.📚💖#ElViajeroDelSiglo </p>
+                                <div class="postText p-1">
+                                    <p><b>10 likes</b></p>  
+                                    <p>A Wandernburgo, una ciudad “móvil” entre Sajonia y Prusia (geográficamente indeterminada), ha llegado un viajero sin aparentes raíces, un hombre extraño tocado con un birrete que ha hecho del viaje por el viaje su razón de ser, alguien para quien el mundo y la vida no son sino una sucesión de estampas callejeras que en nada le comprometen. Wandernburgo no es un destino final sino una etapa más. Y sin embargo… hay algo en la ciudad y en sus habitantes que le atrae irremediablemente. Con el paso de los días, este hombre sin aparentes ataduras acaba preso de una serie de fuerzas ignotas que le impiden abandonar el lugar; donde antes había un viajero ahora hay un ciudadano.📚💖#ElViajeroDelSiglo </p>
                                 </div>
                             </div>
                 </div>
             <div class="row">
                     <div class="col-12 m-3">
                         <div class="postBox">
-                            <div class="postHeader">
+                            <div class="postHeader p-1">
                                 <p>Color favorito</p>
                                 <p>08/11</p>
                             </div>
                             <div>
                                 <img class="postImage" src="https://cdnblog.picsart.com/2020/10/tempo-teal-780x520.jpeg?to=max&r=780&q=90"/>
                             </div>
-                            <div class="postText">
-                                <p><b>10 likes</b><br><br>Teal, Al contrario de lo que se piensa, el teal no es un color azul, sino que es un color verde. Asimismo, el turquesa no es un color del espectro del verde, sino que es un color perteneciente al espectro azul.🟢🌈 #TealColor </p>
+                            <div class="postText p-1">
+                                <p><b>10 likes</b></p>
+                                <p>Teal, Al contrario de lo que se piensa, el teal no es un color azul, sino que es un color verde. Asimismo, el turquesa no es un color del espectro del verde, sino que es un color perteneciente al espectro azul.🟢🌈 #TealColor </p>
                             </div>
                         </div>   
     </div>
-    </div> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </div>     
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
 </body>
 </html>

@@ -3,9 +3,6 @@
     align-items: center;
 }
 
-.gridIconNotShow {
-    display: none;
-}
 .postHeader {
     display: flex;
     justify-content: space-between;
@@ -22,4 +19,8 @@
 img[class*="Icon"] {
     height: 24px;
     width: 24px;
+}
+
+.headerIcon {
+    margin-right: 2px;
 }
