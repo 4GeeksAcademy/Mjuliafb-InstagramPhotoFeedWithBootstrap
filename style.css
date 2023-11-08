@@ -24,3 +24,11 @@ img[class*="Icon"] {
 .headerIcon {
     margin-right: 2px;
 }
+
+#btnGrid:focus {
+    color:blue
+}
+
+#btnSquare:focus  {
+    color:blue
+}
