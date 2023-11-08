@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram photo feed with bootstrap</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"> 
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
             <div class="col-3">
-                <img class="HeaderIcon">
-            </div>
-            <div class="col-3">
-                <h1>Instagram</h1>
+                <div class="headerDisplayIconTitle">
+                    <img class="HeaderIcon" src="./assets/icono_instagram.png"/>
+                    <h1>Instagram</h1>
+                </div>
             </div>
             <div class="col-3">
                 <button type="button" class="btn btn-success">Create new post</button>
             </div>
             <div class="col-3">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Action
-                  </button>
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="./assets/icono_config.png">
+                 </button>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Profile</a></li>
                     <li><a class="dropdown-item" href="#">Accesibility</a></li>
@@ -35,25 +35,44 @@
     <div class="container"> 
         <div class="row">
             <div class="col-2">
-                <img class="GridIcon">
+                <img class="gridIcon" src="./assets/iconono_cuadrados_grid_gris.png"/>
+                <img class="gridIconNotShow" src="./assets/iconono_cuadrados_grid_azul.png"/>
             </div>
             <div class="col-2">
-                <img class="GridIcon">
+                <img class="gridIcon" src="./assets/icono_cuadrado_gris.png"/>
+                <img class="gridIconNotShow" src="./assets/iconono_cuadrados_grid_azul.png"/>
             </div>
         </div>  
         <div class="row">
             <div class="col-6">
-                <div class="PostHeader">
-                    <p></p>
-                    <img>
-                </div>
-                <div>
-                    <img class="PostImage">
-                </div>
-                <div class="PostText">
-                    <p></p>
+                <div class="postBox">
+                    <div class="postHeader">
+                        <p>Family time</p>
+                        <p>08/11</p>
+                    </div>
+                    <div>
+                        <img class="postImage" src="https://play-lh.googleusercontent.com/joydPd8jZSQSuzxWfGnrSGEuVXdg_y4TxSsYLCsEL-rYQlp0U-2ETFmMunQIH7Ozpm4=w2560-h1440-rw"/>
+                    </div>
+                    <div class="postText">
+                        <p><b>10 likes</b><br><br>En el reino de la selva, el amor maternal es tan feroz como hermoso. 🦁💕#LeonaYCachorro</p>
+                    </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="postBox">
+                        <div class="postHeader">
+                            <p>Favorite food</p>
+                            <p>08/11</p>
+                        </div>
+                        <div>
+                            <img class="postImage" src="https://www.asadorcitywokalfafar.com/wp-content/uploads/2020/07/city-wok-alfafar-115-arroz-con-gambas-.jpg"/>
+                        </div>
+                        <div class="postText">
+                            <p><b>10 likes</b><br><br>La comida china siempre es una aventura culinaria llena de sabores intensos. Cada bocado es un viaje a través de la tradición y la creatividad culinaria de China. ¿Cuál es tu plato chino favorito? 🥡🥢 #ComidaChina</p>
+                        </div>
+                    </div>       
+                </div>
         </div>
     </div> 
     

@@ -1,0 +1,18 @@
+.headerDisplayIconTitle {
+    display: flex;
+}
+.gridIconNotShow {
+    display: none;
+}
+.postHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.postImage {
+    width: 100%;
+}
+
+.postBox {
+    border: 1px solid #000;
+}
