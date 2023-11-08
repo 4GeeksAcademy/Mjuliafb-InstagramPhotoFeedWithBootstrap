@@ -21,6 +21,10 @@ img[class*="Icon"] {
     width: 24px;
 }
 
+p{
+   margin-bottom: 0;
+}
+
 .headerIcon {
     margin-right: 2px;
 }
@@ -31,4 +35,8 @@ img[class*="Icon"] {
 
 #btnSquare:focus  {
     color:blue
+}
+
+h3{
+    margin-left: 5px;
 }
