@@ -1,6 +1,8 @@
-.headerDisplayIconTitle {
+.headerDisplay {
     display: flex;
+    align-items: center;
 }
+
 .gridIconNotShow {
     display: none;
 }
@@ -15,4 +17,9 @@
 
 .postBox {
     border: 1px solid #000;
+}
+
+img[class*="Icon"] {
+    height: 24px;
+    width: 24px;
 }
