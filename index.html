@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid">  <!-- Header: Logo & buttons -->
         <div class="row bg-light">
             <div class="col-10 p-2" >
                 <div class="headerDisplay d-flex align-items-center ">
-                    <i class="fa-instagram fa-brands fa-2x"></i>
-                    <h3>Instagram</h3>
+                    <i class="fa-instagram fa-brands fa-2x"></i> <!-- Header: Icon-->
+                    <h3>Instagram</h3> <!-- Header: Logo-->
                 </div>
             </div>
             <div class="col-1 p-2">
                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Create new post
-                      </button>
+                      </button> <!-- Header: btn create -->
                       <!-- Modal -->
                       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div class="modal-dialog">
@@ -29,18 +29,18 @@
                               <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body"> <!-- btn create modal: Form -->
                                 <div class="form-group mb-3">
                                     <label for="exampleFormControlTextarea1" class="form-label">Caption: </label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
                                 </div>
-                                <!-- Iconos abajo modal -->
+                                <!-- btn create modal: icons location & photos modal -->
                                 <div>
                                  <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-camera fa-solid"></i></button>
                                  <button type="button" class="btn btn-outline-secondary btn-sm"><i class="fa-location-dot fa-solid "></i></button>
                                 </div>
                             </div>
-                            <div class="modal-footer">
+                            <div class="modal-footer"> <!-- btn create modal: botones action-->
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                               <button type="button" class="btn btn-success">Publish</button>
                             </div>
@@ -48,10 +48,10 @@
                         </div>
                       </div>
             </div>
-            <div class="col-1 p-2 position-absolute top-0 end-0">      
+            <div class="col-1 p-2 position-absolute top-0 end-0">     
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-gear fa-solid"></i>
-                    </button>
-                     <ul class="dropdown-menu">
+                    </button> <!-- Header: btn settings-->
+                     <ul class="dropdown-menu"> <!-- Header: btn settings list-->
                        <li><a class="dropdown-item" href="#">Profile</a></li>
                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
                        <li><a class="dropdown-item" href="#">Privacy and data</a></li>
@@ -61,55 +61,56 @@
             </div>
         </div>
     </div>    
-    <div class="container-fluid"> 
+    <div class="container-fluid"> <!-- Middle: btn visualization-->
         <div class="row align-items-center">
             <div class="col-5 p-2"></div>
             <div class="col-1 p-2 position-relative m-2">
                 <button type="button" id="btnGrid" class="btn border-0 position-absolute top-0 end-0"><i class="fa-grip fa-solid fa-lg"></i></button>
-            </div>
+            </div> <!-- Middle: btn grid-->
             <div class="col-1 p-2 position-relative m-2">
                 <button type="button" id="btnSquare" class="btn border-0 position-absolute top-0 start-0"><i class="fa-square fa-solid"></i></button>
-            </div>
+            </div> <!-- Middle: btn column-->
             <div class="col-5 p-2"></div>
         </div>
     </div>
-    <div class="container">     
-        <div class="row ">
-            <div class="col-12 m-3">
-                <div class="postBox">
-                    <div class="postHeader p-1">
+    <div class="container-fluid">  <!-- Middle +: posts -->   
+        <div class="row justify-content-md-center">
+            <div class="col-6 m-3">
+                <div class="postBox"> <!-- Middle +: post box 1 -->   
+                    <div class="postHeader p-1"> 
                         <p>Animal favorito</p>
                         <p>08/11</p>
-                    </div>
+                    </div> <!-- OK 1-->   
                     <div>
                         <img class="postImage" src="https://img.freepik.com/foto-gratis/retrato-mascota-adorable-aislado_23-2149192356.jpg?w=1380&t=st=1699476777~exp=1699477377~hmac=e95678c68f210e0367aa4fda863268b0dad9a32b49ac6c6d614ecf277fd065cb"/>
-                    </div>
+                    </div> <!-- OK 1-->   
                     <div class="postText p-1">
                         <p><b>10 likes</b></p>
                         <p>Si buscas un perro tranquilo al que le guste el sofá y que no requiera demasiada actividad, el husky siberiano no es para ti. 🐶🛷#HuskySiberiano</p>
+                    </div> <!-- OK 1-->   
+                </div> <!-- OK 2-->   
+            </div> <!-- OK 3-->   
+        </div> <!-- OK 4-->   
+        <div class="row justify-content-md-center">
+            <div class="col-6 m-3">
+                <div class="postBox"> <!-- Middle +: post box 1 -->   
+                    <div class="postHeader p-1"> 
+                        <p>Comida favorita</p>
+                        <p>08/11</p>
+                    </div>
+                    <div>
+                        <img class="postImage" src="https://www.asadorcitywokalfafar.com/wp-content/uploads/2020/07/city-wok-alfafar-115-arroz-con-gambas-.jpg"/>
+                    </div>
+                    <div class="postText p-1">
+                        <p><b>10 likes</b></p>
+                        <p>La comida china siempre es una aventura culinaria llena de sabores intensos. Cada bocado es un viaje a través de la tradición y la creatividad culinaria de China. ¿Cuál es tu plato chino favorito? 🥡🥢 #ComidaChina</p>
                     </div>
                 </div>
             </div>
-        <div class="row">
-            <div class="col-12 m-3">
-                    <div class="postBox">
-                        <div class="postHeader p-1">
-                            <p>Comida favorita</p>
-                            <p>08/11</p>
-                        </div>
-                        <div>
-                            <img class="postImage" src="https://www.asadorcitywokalfafar.com/wp-content/uploads/2020/07/city-wok-alfafar-115-arroz-con-gambas-.jpg"/>
-                        </div>
-                        <div class="postText p-1">
-                            <p><b>10 likes</b></p>
-                            <p>La comida china siempre es una aventura culinaria llena de sabores intensos. Cada bocado es un viaje a través de la tradición y la creatividad culinaria de China. ¿Cuál es tu plato chino favorito? 🥡🥢 #ComidaChina</p>
-                        </div>
-                    </div>       
-                </div>
-        </div>
-        <div class="row">
-            <div class="col-12 m-3">
-                <div class="postBox">
+            </div>
+        <div class="row justify-content-md-center">
+            <div class="col-6 m-3">
+                <div class="postBox"> <!-- Middle +: post box 3 --> 
                     <div class="postHeader p-1">
                         <p>Planta favorita</p>
                         <p>08/11</p>
@@ -123,9 +124,10 @@
                     </div>
                 </div>       
             </div>
-            <div class="row">
-                <div class="col-12 m-3">
-                    <div class="postBox">
+            </div>
+            <div class="row justify-content-md-center">
+                <div class="col-6 m-3">
+                    <div class="postBox"> <!-- Middle +: post box 4 --> 
                         <div class="postHeader p-1">
                             <p>Equipo favorito</p>
                             <p>08/11</p>
@@ -138,9 +140,11 @@
                             <p>El Real Madrid, un equipo legendario con un legado de gloria. ⚽👑 #RealMadrid </p>
                         </div>
                     </div>
-            <div class="row">
-                <div class="col-12 m-3">
-                            <div class="postBox">
+                    </div>
+                </div>
+            <div class="row justify-content-md-center">
+                <div class="col-6 m-3">
+                            <div class="postBox"> <!-- Middle +: post box 5 --> 
                                 <div class="postHeader p-1">
                                     <p>Libro favorito</p>
                                     <p>08/11</p>
@@ -154,9 +158,10 @@
                                 </div>
                             </div>
                 </div>
-            <div class="row">
-                    <div class="col-12 m-3">
-                        <div class="postBox">
+                </div>
+        <div class="row justify-content-md-center">
+                <div class="col-6 m-3">
+                        <div class="postBox"> <!-- Middle +: post box 6 --> 
                             <div class="postHeader p-1">
                                 <p>Color favorito</p>
                                 <p>08/11</p>
@@ -169,8 +174,9 @@
                                 <p>Teal, Al contrario de lo que se piensa, el teal no es un color azul, sino que es un color verde. Asimismo, el turquesa no es un color del espectro del verde, sino que es un color perteneciente al espectro azul.🟢🌈 #TealColor </p>
                             </div>
                         </div>   
-    </div>
-    </div>     
+        </div>
+</div>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   
 </body>
