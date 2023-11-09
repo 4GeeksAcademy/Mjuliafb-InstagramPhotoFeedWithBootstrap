@@ -35,3 +35,17 @@ p{
 h3{
     margin-left: 5px;
 }
+
+.photo-container {
+    position: relative;
+}
+
+.photo {
+    display: none;
+    max-width: 100%;
+    height: auto;
+}
+
+.icon-btn {
+    font-size: 20px;
+}
