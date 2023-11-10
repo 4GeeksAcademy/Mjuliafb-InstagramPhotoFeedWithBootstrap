@@ -29,15 +29,14 @@ h3{
 }
 /* PRUEBA */
 .photo-container {
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .photo {
-    display: none;
     max-width: 100%;
     height: auto;
+    width: 100%;
 }
 
 .grid-container {
@@ -59,5 +58,4 @@ h3{
 
 .button-container {
     text-align: center;
-    margin-top: 20px;
 }
