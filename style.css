@@ -42,10 +42,6 @@ h3{
     width: 100%;
 }
 
-.button-container {
-    text-align: center;
-}
-
 
 #nav-home-tab:focus {
     color: blue;
