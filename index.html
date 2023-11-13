@@ -15,10 +15,10 @@
 <body>
     <div class="container-fluid"> <!-- Header: Logo & buttons -->
         <div class="row bg-light align-items-center">
-            <div class="col-md-10 p-2 ">
-                <div class="headerDisplay d-flex align-items-center">
+            <div class="col-md-10 p-2">
+                <div class="headerDisplay d-flex align-items-center text-center">
                     <i class="fa-instagram fa-brands fa-2x"></i> <!-- Header: Icon-->
-                    <h3>Instagram</h3> <!-- Header: Logo-->
+                    <h4>Instagram</h4> <!-- Header: Logo-->
                 </div>
             </div>
             <div class="col-1 p-2">
@@ -77,20 +77,23 @@
         <div class="container-fluid mt-1">
             <div class="row justify-content-center">
                 <div class="col-md-12 p-3 border-0"> <!-- Buttons start-->
-                    <div class="nav nav-tabs border-0 mb-3 justify-content-center" id="nav-tab" role="tablist">
-                        <!--AQUI VA BOTON 1-->
-                        <button class="btn border-0 " id="nav-profile-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-home"
-                            aria-selected="true"><i class="fa-grip fa-solid fa-lg"></i></button> <!-- Grid button-->
-                        <!--AQUI VA BOTON 2-->
-                        <button class="btn border-0 active show" id="nav-home-tab" data-bs-toggle="tab"
-                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-profile"
-                            aria-selected="false"><i class="fa-square fa-solid"></i></button> <!-- Square button-->
-                    </div> <!-- Buttons ends-->
+                    <nav> <!-- NAV NUEVO-->
+                        <div class="nav nav-tabs border-0 mb-3 justify-content-center" id="nav-tab" role="tablist">
+                            <!--AQUI VA BOTON 1-->
+                            <button class="btn border-0 " id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true"><i class="fa-grip fa-solid fa-lg"></i></button> <!-- Grid button-->
+                            <!--AQUI VA BOTON 2-->
+                            <button class="btn border-0 active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false" autofocus><i class="fa-square fa-solid"></i></button>
+                            <!-- Square button-->
+                        </div> <!-- Buttons ends-->
+                    </nav> <!-- NAV NUEVO-->
                     <div class="tab-content" id="nav-tabContent">
                         <div class="tab-pane fade active show" id="nav-home" role="tabpanel"
                             aria-labelledby="nav-home-tab">
-                            <!-- AQUI VA EL CONTENIDO DE LA COLUMNA DE FOTOS-->
+                            <!-- COLUMNA DE FOTOS-->
                             <div class="photo-container" id="photo1"> <!-- Photo column starts-->
                                 <div class="row justify-content-md-center">
                                     <div class="col-6 m-3">
@@ -302,49 +305,49 @@
                                 </div> <!-- OK rows-->
                             </div> <!-- Photo column ends-->
                         </div>
-                    </div>
-                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="container-full w-100"> <!-- Grid start-->
-                            <div class="row row-cols-3 mt-3 mb-3">
-                                <div class="col">
-                                    <img class="grid-photo"
-                                        src="https://img.freepik.com/foto-gratis/retrato-mascota-adorable-aislado_23-2149192356.jpg?w=1380&t=st=1699476777~exp=1699477377~hmac=e95678c68f210e0367aa4fda863268b0dad9a32b49ac6c6d614ecf277fd065cb" />
-                                </div>
-                                <div class="col">
-                                    <img class="grid-photo"
-                                        src="https://www.asadorcitywokalfafar.com/wp-content/uploads/2020/07/city-wok-alfafar-115-arroz-con-gambas-.jpg" />
-                                </div>
-                                <div class="col">
-                                    <img class="grid-photo"
-                                        src="https://img.freepik.com/foto-gratis/surtido-hermosas-flores-fondo_23-2149057049.jpg?w=1380&t=st=1699477375~exp=1699477975~hmac=271e80a0a022a05e33be7aa4be9ea2a067b8b87a30d2d1399a258bfddb7ef086" />
-                                </div>
-                                <div class="col mt-3">
-                                    <img class="grid-photo"
-                                        src="https://img.freepik.com/foto-gratis/estudiante-adolescente-jugando-al-futbol_23-2148209596.jpg?w=1380&t=st=1699550664~exp=1699551264~hmac=20007405d7f140e9cf0c51a40bf08ed837ba1881c8d25abd9d626edb61b7d320" />
-                                </div>
-                                <div class="col mt-3">
-                                    <img class="grid-photo"
-                                        src="https://img.freepik.com/foto-gratis/composicion-libros-libro-abierto_23-2147690555.jpg?w=1380&t=st=1699549268~exp=1699549868~hmac=87ad2d1f423e0e7a3c9b1cfdfb4831e5da64aa2a9b26e6536d0810a6bf50f738" />
-                                </div>
-                                <div class="col mt-3">
-                                    <img class="grid-photo"
-                                        src="https://cdnblog.picsart.com/2020/10/tempo-teal-780x520.jpeg?to=max&r=780&q=90" />
-                                </div>
-                                <div class="col mt-3">
-                                    <img class="grid-photo"
-                                        src="https://img.freepik.com/foto-gratis/estudiante-adolescente-jugando-al-futbol_23-2148209596.jpg?w=1380&t=st=1699550664~exp=1699551264~hmac=20007405d7f140e9cf0c51a40bf08ed837ba1881c8d25abd9d626edb61b7d320" />
-                                </div>
-                                <div class="col mt-3">
-                                    <img class="grid-photo"
-                                        src="https://img.freepik.com/foto-gratis/estudiante-adolescente-jugando-al-futbol_23-2148209596.jpg?w=1380&t=st=1699550664~exp=1699551264~hmac=20007405d7f140e9cf0c51a40bf08ed837ba1881c8d25abd9d626edb61b7d320" />
-                                </div>
-                                <div class="col mt-3">
-                                    <img class="grid-photo"
-                                        src="https://img.freepik.com/foto-gratis/estudiante-adolescente-jugando-al-futbol_23-2148209596.jpg?w=1380&t=st=1699550664~exp=1699551264~hmac=20007405d7f140e9cf0c51a40bf08ed837ba1881c8d25abd9d626edb61b7d320" />
-                                </div>
-                            </div> <!-- OK row row col 3-->
-                        </div> <!-- Grid ends-->
-                        <!--AQUI TERMINABA PHOTO COLUMNA-->
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="container-full w-100"> <!-- Grid start-->
+                                <div class="row row-cols-3 mt-3 mb-3">
+                                    <div class="col">
+                                        <img class="grid-photo"
+                                            src="https://img.freepik.com/foto-gratis/retrato-mascota-adorable-aislado_23-2149192356.jpg?w=1380&t=st=1699476777~exp=1699477377~hmac=e95678c68f210e0367aa4fda863268b0dad9a32b49ac6c6d614ecf277fd065cb" />
+                                    </div>
+                                    <div class="col">
+                                        <img class="grid-photo"
+                                            src="https://www.asadorcitywokalfafar.com/wp-content/uploads/2020/07/city-wok-alfafar-115-arroz-con-gambas-.jpg" />
+                                    </div>
+                                    <div class="col">
+                                        <img class="grid-photo"
+                                            src="https://img.freepik.com/foto-gratis/surtido-hermosas-flores-fondo_23-2149057049.jpg?w=1380&t=st=1699477375~exp=1699477975~hmac=271e80a0a022a05e33be7aa4be9ea2a067b8b87a30d2d1399a258bfddb7ef086" />
+                                    </div>
+                                    <div class="col mt-3">
+                                        <img class="grid-photo"
+                                            src="https://img.freepik.com/foto-gratis/estudiante-adolescente-jugando-al-futbol_23-2148209596.jpg?w=1380&t=st=1699550664~exp=1699551264~hmac=20007405d7f140e9cf0c51a40bf08ed837ba1881c8d25abd9d626edb61b7d320" />
+                                    </div>
+                                    <div class="col mt-3">
+                                        <img class="grid-photo"
+                                            src="https://img.freepik.com/foto-gratis/composicion-libros-libro-abierto_23-2147690555.jpg?w=1380&t=st=1699549268~exp=1699549868~hmac=87ad2d1f423e0e7a3c9b1cfdfb4831e5da64aa2a9b26e6536d0810a6bf50f738" />
+                                    </div>
+                                    <div class="col mt-3">
+                                        <img class="grid-photo"
+                                            src="https://cdnblog.picsart.com/2020/10/tempo-teal-780x520.jpeg?to=max&r=780&q=90" />
+                                    </div>
+                                    <div class="col mt-3">
+                                        <img class="grid-photo"
+                                            src="https://img.freepik.com/foto-gratis/estudiante-adolescente-jugando-al-futbol_23-2148209596.jpg?w=1380&t=st=1699550664~exp=1699551264~hmac=20007405d7f140e9cf0c51a40bf08ed837ba1881c8d25abd9d626edb61b7d320" />
+                                    </div>
+                                    <div class="col mt-3">
+                                        <img class="grid-photo"
+                                            src="https://img.freepik.com/foto-gratis/estudiante-adolescente-jugando-al-futbol_23-2148209596.jpg?w=1380&t=st=1699550664~exp=1699551264~hmac=20007405d7f140e9cf0c51a40bf08ed837ba1881c8d25abd9d626edb61b7d320" />
+                                    </div>
+                                    <div class="col mt-3">
+                                        <img class="grid-photo"
+                                            src="https://img.freepik.com/foto-gratis/estudiante-adolescente-jugando-al-futbol_23-2148209596.jpg?w=1380&t=st=1699550664~exp=1699551264~hmac=20007405d7f140e9cf0c51a40bf08ed837ba1881c8d25abd9d626edb61b7d320" />
+                                    </div>
+                                </div> <!-- OK row row col 3-->
+                            </div> <!-- Grid ends-->
+                            <!--AQUI TERMINABA PHOTO COLUMNA-->
+                        </div>
                     </div>
                 </div>
             </div>
